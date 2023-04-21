@@ -1,0 +1,14 @@
+config GATP_HID
+	tristate "Goodix Advance touch platform"
+	default n
+	depends on SPI && INPUT
+	select HID
+	help
+	  Say Y here if you have Goodix Advance touch platform touch controller,
+	  which is connected to your computer via SPI.
+
+	  If unsure, say N.
+
+	  This support is also available as a module.
+
+endmenu
